@@ -1,0 +1,36 @@
+nav {
+  background: #222;
+  display: block;
+  
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px;
+    color: #7FDBFFcc;
+    position: relative;
+    
+    &:hover {
+      color: #7FDBFF;
+    }
+    
+    &.on {
+      background: #2a2a2a;
+      pointer-events: none;
+      color: #eee;
+      text-decoration: none;
+    }
+    
+    sup {
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      font-size: 9px;
+      background: #FF4136;
+      color: #fff;
+      padding: 2px 3px;
+      border-radius: 5px;
+      border-bottom-left-radius: 0;
+      opacity: .75;
+    }
+  }
+}

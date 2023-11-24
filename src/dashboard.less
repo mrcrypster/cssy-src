@@ -1,0 +1,49 @@
+.dashboard {
+  display: table;
+  width: 100%;
+
+  .plate {
+    display: table-cell;
+    
+    div {
+      background: #222;
+      color: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      margin: 20px 0 20px 20px;
+      
+      b {
+        font-size: 42px;
+        display: block;
+        margin: 0 0 40px 0;
+        font-family: Georgia;
+        line-height: 100%;
+      }
+      
+      i {
+        font-style: normal;
+        display: block;
+        font-size: 12px;
+        text-align: right;
+        opacity: .66;
+      }
+    }
+    
+    &.ok div { background: #2ECC40; color: #ffffffcc; }
+    &.working div { background: #2ECC40; color: #ffffffcc; }
+    &.error div { background: #FF4136; color: #ffffffcc; }
+    &.notice div { background: #FFDC00; color: #00000088; }
+    &.warning div { background: #FF851B; color: #ffffffcc; }
+    &.info div, &.new div, &.pending div { background: #39CCCC; color: #00000088; }
+    &.special div { background: #B10DC9; color: #ffffffcc; }
+    &.action div, &.processing div { background: #0074D9; color: #ffffffcc; }
+    
+    &:last-child div {
+      margin-right: 20px;
+    }
+  }
+  
+  & + .dashboard .plate div {
+    margin-top: 0;
+  }
+}
